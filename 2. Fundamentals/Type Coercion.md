@@ -1,12 +1,11 @@
 # Type coercion
 
-Type coercion is the process of `converting one type of value into another`. There are 3 types of conversion in JavaScript
-
-- to string
-- to boolean
-- to number
+Type Coercion refers to the process of automatic or implicit `conversion of values from one data type to another`
 
 ```
-  1 == '1'; // true
-  1 === '1' // false
+  const value1 = "5";
+  const value2 = 9;
+  let sum = value1 + value2;
+
+  console.log(sum); // "59"
 ```
