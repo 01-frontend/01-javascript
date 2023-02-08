@@ -1,4 +1,5 @@
-# js-dd
+# Javascript Deep Dive
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript
-https://zerotomastery.io/cheatsheets/javascript-cheatsheet-the-advanced-concepts
+https://javascript.info/
+https://medium.com/innomizetech/a-brief-summary-of-javascript-learning-path-ecaeb2adf285
+https://algodaily.com/lessons/introduction-to-js-engines-and-runtimes
