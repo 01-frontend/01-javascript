@@ -1,6 +1,6 @@
 # Built-in Objects
 
-All primitive types in Javascript are `actually wrapped by built-in object` such as Number, String, Boolean...so that why we can use
+All primitive types in Javascript are `actually wrapped by built-in objects` such as Number, String, Boolean...so that's why we can access properties like an object
 
 ```
   true.toString()
