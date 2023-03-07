@@ -1,12 +1,10 @@
 # Overview
 
-References
-
-- https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work
+https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work
 
 ## 1. Navigation
 
-This is when the user` requests a page` by `entering a URL` into the address bar,` clicking a link`, `submitting a form`, as well as `other actions`
+This is when the user `requests a page` by `entering a URL` into the address bar,` clicking a link`, `submitting a form`, as well as `other actions`
 
 ## 2. DNS Lookup
 
@@ -34,16 +32,14 @@ This response for this `initial request contains the first byte` of data receive
 
 ## 6. Parsing
 
-Parsing is the step the `browser takes to turn the data it receives` over the network `into the DOM and CSSOM`
+Parsing is the step `the browser takes to turn the data it receives` over the network `into the DOM and CSSOM`
 
-### Building the DOM tree
+## 7. Render
 
-### Building the CSSOM
+Rendering steps `include style, layout, paint` and, in some cases, `compositing`
 
-### Render Tree
+The CSSOM and DOM trees created in the parsing step `are combined into a render tree` which is then `used to compute the layout` of every visible element, which is then painted to the screen
 
-### Layout
+## 8. Interactivity
 
-### Paint
-
-## 7. Interactivity
+`Time to Interactive (TTI)` is the `measurement of how long it took` from that f`irst request which led to the DNS lookup and SSL connection` to `when the page is interactive`
