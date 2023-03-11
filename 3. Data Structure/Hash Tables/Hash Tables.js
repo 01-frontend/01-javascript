@@ -38,11 +38,23 @@ class HastTable {
 
     return undefined;
   }
+
+  keys() {
+    const keyArray = [];
+
+    for (let i = 0; i < this.data.length; i++) {
+      if (this.data[i]) {
+        keyArray.push(this.data[i][0][0]);
+      }
+    }
+
+    return keyArray;
+  }
 }
 
-const myHT = new HastTable(2);
+const myHT = new HastTable(30);
 myHT.set("grapes", 10000);
 myHT.set("apples", 54);
 
-console.log(myHT);
+console.log(myHT.keys());
 console.log(myHT.get("apples"));
