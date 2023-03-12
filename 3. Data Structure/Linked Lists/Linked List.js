@@ -93,6 +93,10 @@ class LinkedList {
 
     return result;
   }
+
+  reverse() {
+    // wait for implementation
+  }
 }
 
 const linkedList = new LinkedList(2);
