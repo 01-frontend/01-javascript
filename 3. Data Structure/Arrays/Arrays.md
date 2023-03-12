@@ -1,17 +1,11 @@
 # Arrays
 
-```
-  const strings = ['a', 'b', 'c', 'd'];
+Array is a linear data structure that is a `collection of similar data types`
 
-  // push - O(1)
-  strings.push(e); // ['a', 'b', 'c', 'd', 'e']
+## # Pros of Array
 
-  // pop - O(1)
-  strings.pop(); // ['a', 'b', 'c', 'd']
+-
 
-  // unshift - O(n)
-  string.unshift('x') // ['x', 'a', 'b', 'c', 'd']
+## # Cons of Array
 
-  // splice - O(n/2) => worst case: O(n)
-  strings.splice(2, 0, 'alien'); // ['x', 'a', 'alien', 'b', 'c', 'd']
-```
+- `Insertion and deletion issues`: `all elements index must be shifted` to accommodate the change
