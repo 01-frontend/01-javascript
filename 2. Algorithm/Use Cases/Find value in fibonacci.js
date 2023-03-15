@@ -27,7 +27,7 @@ const fibonacciIterative = (num) => {
     result.push(nextFibo);
   }
 
-  return result[result.length - 1];
+  return result[n];
 };
 
 console.log("fibonacciIterative: ", fibonacciIterative(43));
