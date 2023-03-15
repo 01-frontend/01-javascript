@@ -1,6 +1,6 @@
 # Closures
 
-A closure is a function that `remembers its outer variables` and `can access them`
+A closure is a function that `has access to its outer function scope` even after the outer function has returned
 
 ```
   function a() {
