@@ -17,12 +17,15 @@ In realty, prototype is not much popular because of `its bad performance` and th
 
 ```
   const array = [];
-  array.__proto__ = Array.prototype
+  // array.__proto__ = Array.prototype
+
+  const inception = () => {}
+  // inception.__proto__ = Function.prototype
 ```
 
 ```
-  const inception = () => {}
-  inception.__proto__ = Function.prototype
+  const array = [];
+  array.__proto__.__proto__; // this call prototype chain
 ```
 
 Another way to set the prototype beside the `__proto__` is `Object.create`
