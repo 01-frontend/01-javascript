@@ -6,17 +6,16 @@ const promisify = (item, delay) => {
   });
 };
 
-const shortDelay = () => Promise.resolve("short");
-const longDelay = () => promisify("long", 3000);
+const longDelay = () => promisify("long", 2000);
 
 const runParallel = async () => {
-  console.log("running...");
-  const startTime = new Date().getSeconds();
+  const result = await Promise.race([
+    longDelay(),
+    Promise.reject("There is any error"),
+    Promise.resolve("short"),
+  ]);
 
-  const result = await Promise.allSettled([shortDelay(), longDelay()]);
-
-  const endTime = new Date().getSeconds();
-  console.log(`done in ${endTime - startTime} second`, result);
+  console.log(`Result: `, result); // Uncaught (in promise) There is any error
 };
 
 runParallel();
